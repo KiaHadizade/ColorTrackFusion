@@ -33,61 +33,61 @@ This hybrid approach offers:
 
 ## 📁 Project Structure
 
-ColorTrackFusion/
-│
-├── src/
-│   ├── detection/
-│   │   ├── hsv_detector.py
-│   │   └── color_ranges.py
-│   │
-│   ├── tracking/
-│   │   ├── optical_flow_tracker.py
-│   │   ├── meanshift_tracker.py
-│   │   ├── camshift_tracker.py
-│   │   └── fusion.py
-│   │
-│   ├── pipeline/
-│   │   └── pipeline.py
-│   │
-│   ├── utils/
-│   │   ├── visualization.py
-│   │   ├── video_io.py
-│   │   ├── common.py
-│   │   └── metrics.py
-│   │
-│   └── main.py
-│
-├── configs/
-│   ├── colors.yaml
-│   ├── tracker.yaml
-│   └── camera.yaml
-│
-├── notebooks/
-│   ├── demo.ipynb
-│   ├── experiments.ipynb
-│   └── color-calibration.ipynb
-│
-├── examples/
-│   ├── example_video.mp4
-│   └── screenshots/
-│       └── demo.png
-│
-├── tests/
-│   ├── test_hsv.py
-│   ├── test_optical_flow.py
-│   ├── test_camshift.py
-│   └── test_pipeline.py
-│
-├── docs/
-│   ├── README_images/
-│   ├── installation.md
-│   ├── pipeline.md
-│   └── api_reference.md
-│
-├── .gitignore
-├── requirements.txt
-├── LICENSE
-└── README.md
+ColorTrackFusion/<br>
+│<br>
+├── src/<br>
+│   ├── detection/<br>
+│   │   ├── hsv_detector.py<br>
+│   │   └── color_ranges.py<br>
+│   │<br>
+│   ├── tracking/<br>
+│   │   ├── optical_flow_tracker.py<br>
+│   │   ├── meanshift_tracker.py<br>
+│   │   ├── camshift_tracker.py<br>
+│   │   └── fusion.py<br>
+│   │<br>
+│   ├── pipeline/<br>
+│   │   └── pipeline.py<br>
+│   │<br>
+│   ├── utils/<br>
+│   │   ├── visualization.py<br>
+│   │   ├── video_io.py<br>
+│   │   ├── common.py<br>
+│   │   └── metrics.py<br>
+│   │<br>
+│   └── main.py<br>
+│<br>
+├── configs/<br>
+│   ├── colors.yaml<br>
+│   ├── tracker.yaml<br>
+│   └── camera.yaml<br>
+│<br>
+├── notebooks/<br>
+│   ├── demo.ipynb<br>
+│   ├── experiments.ipynb<br>
+│   └── color-calibration.ipynb<br>
+│<br>
+├── examples/<br>
+│   ├── example_video.mp4<br>
+│   └── screenshots/<br>
+│       └── demo.png<br>
+│<br>
+├── tests/<br>
+│   ├── test_hsv.py<br>
+│   ├── test_optical_flow.py<br>
+│   ├── test_camshift.py<br>
+│   └── test_pipeline.py<br>
+│<br>
+├── docs/<br>
+│   ├── README_images/<br>
+│   ├── installation.md<br>
+│   ├── pipeline.md<br>
+│   └── api_reference.md<br>
+│<br>
+├── .gitignore<br>
+├── requirements.txt<br>
+├── LICENSE<br>
+└── README.md<br>
 
 
 For implementation details, see the `src/` directory
