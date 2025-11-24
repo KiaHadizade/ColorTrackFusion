@@ -17,7 +17,9 @@ This hybrid approach offers:
 ✔ Recovery when the object is lost  
 ✔ Real-time performance
 
+
 ---
+
 
 ## 🔥 Features
 
@@ -29,7 +31,9 @@ This hybrid approach offers:
 - 🧩 Modular and clean pipeline  
 - 🎥 Works with both video input and webcam  
 
+
 ---
+
 
 ## 📁 Project Structure
 
@@ -92,7 +96,9 @@ ColorTrackFusion/<br>
 
 For implementation details, see the `src/` directory
 
+
 ---
+
 
 ## 🛠 Installation
 
@@ -102,6 +108,10 @@ cd color-object-tracker
 pip install -r requirements.txt
 ```
 
+
+---
+
+
 ## ▶️ Usage
 
 Run the main script:
@@ -110,12 +120,20 @@ Run the main script:
 or webcam mode:
 `python src/main.py --webcam`
 
+
+---
+
+
 ## ⚙️ Configuration
 
 All thresholds and parameters are stored in:
 - `configs/colors.yaml`
 - `configs/tracker.yaml`
 You can easily tune HSV color ranges here
+
+
+---
+
 
 ## 📊 Pipeline
 
@@ -126,20 +144,36 @@ You can easily tune HSV color ranges here
 - Re-detect periodically
 - Output final bounding box
 
+
+---
+
+
 ## 📓 Notebooks
 
 - `notebooks/demo.ipynb` – quick overview and visualization
 - `notebooks/experiments.ipynb` – tuning & tracking benchmarks
 - `notebooks/color-calibration.ipynb` – adjusting HSV values
 
+
+---
+
+
 ## 🖼 Examples
 
 See the examples/ folder for sample videos and screenshots
+
+
+---
+
 
 ## 🤝 Contributing
 
 Pull requests are welcome!
 Feel free to open issues or discussion threads
+
+
+---
+
 
 ## 📄 License
 
