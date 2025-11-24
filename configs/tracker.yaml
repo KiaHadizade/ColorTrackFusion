@@ -1,0 +1,9 @@
+optical_flow:
+  max_corners: 100
+  quality_level: 0.3
+  min_distance: 7
+
+camshift:
+  termination:
+    max_iter: 10
+    epsilon: 1
