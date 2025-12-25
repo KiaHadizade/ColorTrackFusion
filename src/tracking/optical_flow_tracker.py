@@ -35,7 +35,7 @@ class OpticalFlowTracker:
         self.prev_gray = gray
 
     def track(self, frame):
-        if self.points is None:
+        if self.points is None or len(self.points) == 0:
             return None
 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -44,11 +44,20 @@ class OpticalFlowTracker:
             self.prev_gray, gray, self.points, None, **self.lk_params
         )
 
-        good_new = next_pts[status == 1]
-        good_old = self.points[status == 1]
+        if next_pts is None or status is None:
+            self.points = None
+            self.prev_gray = gray
+            return None
 
-        self.prev_gray = gray
+        good_new = next_pts[status.flatten() == 1]
+
+        if len(good_new) < 5:
+            self.points = None
+            self.prev_gray = gray
+            return None
+
         self.points = good_new.reshape(-1, 1, 2)
+        self.prev_gray = gray
 
-        return good_new
+        return good_new.reshape(-1, 2)
     
