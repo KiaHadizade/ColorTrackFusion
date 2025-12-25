@@ -47,8 +47,8 @@ class MeanShiftTracker:
         # Restrict to valid color mask
         color_mask = cv2.inRange(
             hsv,
-            np.array((94, 80, 2)),   # YOUR blue range
-            np.array((126, 255, 255))
+            np.array((100, 100, 130)),
+            np.array((179, 255, 255))
         )
 
         back_proj = cv2.bitwise_and(back_proj, back_proj, mask=color_mask)
